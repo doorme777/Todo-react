@@ -1,9 +1,13 @@
+import './HeaderTodo.css';
+
 function HeaderTodo({total, completed}) {
     return (
         <>
-        <h1>Tareas terminadas {completed} de {total}</h1>
+        <div role='header' className='background background-top'>
+            <h1>Tareas terminadas <span>{completed}</span> de <span>{total}</span></h1>
 
-        <input type="search" name="" id="" placeholder="Cubrir a Juan..."/>
+            <input type="search" name="" id="" placeholder="Cubrir a Juan..."/>
+        </div>
         </>
     );
 }

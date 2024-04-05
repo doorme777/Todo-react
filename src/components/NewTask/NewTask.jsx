@@ -1,7 +1,8 @@
+import "./NewTask.css"
 function NewTask(params) {
     return(
         <>
-        <button></button>
+        <button className="add-task">+</button>
         </>
     )
 }

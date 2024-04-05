@@ -1,0 +1,11 @@
+li {
+    display: flex;
+    justify-content: space-between;
+    font-family: var(--fnt-regular);
+    font-size: var(--font-sm);
+    list-style: none;
+    padding: var(--pd-05);
+    margin-block: var(--pd-05);
+    border-radius: var(--pd-2);
+    background-color: var(--cream);
+}

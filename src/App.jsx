@@ -1,18 +1,13 @@
-import {React} from 'react';
+import React from 'react'
 import { HeaderTodo } from './components/HeaderTodo/HeaderTodo.jsx';
-
 import { TaskComponent } from './components/TasksComponent/TasksComponent.jsx'
 import { NewTask } from './components/NewTask/NewTask.jsx';
-import {Task} from './compositors/Task/Task.jsx'
-
+import {Task} from './components/Task/Task.jsx'
 const TaskFake = [
   {text:'Cortar cebolla',completed:true},{text:'Tomar el Curso de Intro a React.js',completed:false},{text:'Llorar con la Llorona',completed:false},{text:'LALALALALA',completed:false}
 ]
 
-import './App.css'
-
 function App() {
-
   return (
     <>
       <HeaderTodo completed={12} total={23}/>

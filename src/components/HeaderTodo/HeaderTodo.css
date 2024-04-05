@@ -1,0 +1,35 @@
+.background-top {
+    border-top-left-radius: var(--pd-05);
+    border-top-right-radius: var(--pd-05);
+    border-bottom: 1.75px solid #fff;
+}
+
+h1 {
+    font-size: var(--font-g);
+    font-family: var(--fnt-regular);
+    font-weight: 600;
+}
+
+h1 span{
+    font-family: var(--fnt-bold);
+    font-weight: bold;
+}
+
+input[type="search"] {
+    background-color: var(--soft-green);
+    padding: var(--pd-05);
+    border: 1px solid grey;
+    border-radius: var(--pd-2);
+    width: 100%;
+    max-width: 560px;
+}
+
+input[type="search"]::placeholder {
+    font-size: var(fon-sm);
+    color: #fff;
+}
+
+input[type="search"]:focus-visible {
+    outline: none;
+    border: 2.75px solid var(--pink);
+}

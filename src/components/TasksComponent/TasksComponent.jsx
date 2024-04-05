@@ -1,7 +1,9 @@
+import "./TasksComponent.css";
+
 function TaskComponent({children}) {
     return(
         <>
-        <ul>
+        <ul className="background background-bottom">
             {children}
         </ul>
         </>
