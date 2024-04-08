@@ -4,8 +4,14 @@ import { HeaderTodo } from '../HeaderTodo/HeaderTodo.jsx';
 import { TaskComponent } from '../TasksComponent/TasksComponent.jsx';
 import { NewTask } from '../NewTask/NewTask.jsx';
 import { Task } from '../Task/Task.jsx';
+import { TodoLoading } from '../TodoLoading/TodoLoading.jsx';
+import { TodoError } from '../TodoError/TodoError.jsx';
+import { EmptyTodos } from '../EmptyTodos/EmptyTodos.jsx';
+
 
 function AppUI({
+  loading,
+  error,
   showConfetti,
   completedTasks,
   totalTasks,
@@ -25,6 +31,9 @@ function AppUI({
         setSearchValue={setSearchValue}
       />
       <TaskComponent>
+        {loading && <TodoLoading/>}
+        {error && <TodoError/>}
+        {(!loading && totalTasks === 0) && <EmptyTodos/>}
         {filteredTasks.map((task) => (
           <Task
             key={task.text}
