@@ -5,8 +5,10 @@
 }
 
 h1 {
+    text-align: center;
     font-size: var(--font-g);
     font-family: var(--fnt-regular);
+    line-height: calc(var(--font-g)*1.5px);
     font-weight: 600;
 }
 
@@ -16,16 +18,21 @@ h1 span{
 }
 
 input[type="search"] {
+    text-align: center;
+    font-size: var(--font-sm);
+    font-family: var(--fnt-regular);
+    line-height: calc(var(--font-sm) * 1.5px);
     background-color: var(--soft-green);
     padding: var(--pd-05);
     border: 1px solid grey;
     border-radius: var(--pd-2);
     width: 100%;
     max-width: 560px;
+    color: #fff;
+
 }
 
 input[type="search"]::placeholder {
-    font-size: var(fon-sm);
     color: #fff;
 }
 

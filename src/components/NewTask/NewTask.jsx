@@ -1,8 +1,10 @@
 import "./NewTask.css"
-function NewTask(params) {
+function NewTask() {
     return(
         <>
-        <button className="add-task">+</button>
+        <button className="add-task">
+            <i className="fa-solid fa-plus fa-2xl"></i>
+        </button>
         </>
     )
 }

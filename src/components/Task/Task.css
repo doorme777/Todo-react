@@ -8,4 +8,28 @@ li {
     margin-block: var(--pd-05);
     border-radius: var(--pd-2);
     background-color: var(--cream);
+    transition: all .1s ease;
+}
+
+li:hover,
+li:active {
+    font-size: var(--font-m);
+}
+/* Agregar esta interracción con css 
+    y quitar lo del componente para que se haga verde
+    por que se ve feo. */
+/* .fa-circle-check{
+    background-color: #8b8d8b;
+}
+.fa-circle-check:active,
+.fa-circle-check:hover {
+    background-color: #0ae60a;
+    width: 100%;
+    
+} */
+
+.fa-circle-xmark::before,
+.fa-circle-check::before  {
+    background: #fff;
+    border-radius: 50%;
 }
