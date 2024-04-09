@@ -1,0 +1,79 @@
+.modal-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  flex-wrap: nowrap;
+
+  position: absolute;
+  top: 22%;
+
+  height: 322px;
+  width: 100%;
+  max-width: 383.99px;
+  padding: var(--pd-05);
+  border-radius: var(--pd-05);
+
+  font-family: var(--fnt-regular);
+  color: #fff;
+  background: rgb(184, 159, 130);
+  background: radial-gradient(
+    circle,
+    rgba(184, 159, 130, 1) 0%,
+    rgba(111, 115, 87, 1) 100%
+  );
+  box-shadow: 0 0 6px 0px;
+}
+
+.title {
+  font-weight: 100;
+  font-size: var(--font-m);
+  margin-bottom: var(--pd-2);
+  border-bottom: 2.75px solid var(--pink);
+}
+
+.form-task {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: nowrap;
+
+  width: 100%;
+}
+
+.form-task textarea[name="text-new-task"] {
+  resize: none;
+  width: 322.53px;
+  height: 108px;
+  margin-bottom: var(--pd-2);
+  padding: var(--pd-05);
+  border: none;
+  font-family: var(--fnt-regular);
+  font-size: var(--font-sm);
+  color: #000;
+  background-color: var(--light-white);
+}
+
+.form-task textarea[name="text-new-task"]::placeholder {
+  position: relative;
+  top: 0;
+  font-family: var(--fnt-italic);
+  font-size: var(--font-sm);
+  color: #5a5656;
+}
+
+.form-task input[type="submit"] {
+  padding: var(--pd-05);
+  border-radius: var(--pd-05);
+  border: none;
+  font-size: var(--font-sm);
+  background-color: var(--soft-green);
+  transition: all 0.25s ease;
+}
+
+.form-task input[type="submit"]:hover {
+  background-color: var(--dark-green);
+  padding-inline: var(--pd-1);
+  box-shadow: 0 0 6px 0px;
+}

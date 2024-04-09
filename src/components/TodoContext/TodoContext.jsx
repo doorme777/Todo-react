@@ -31,6 +31,15 @@ function TodoProvider({ children }) {
     return taskText.includes(searchText);
   });
 
+  const addTodo = (text) => {
+    const newTodos = [...todos];
+    newTodos.push({
+      text,
+      completed: false,
+    });
+    saveTodos(newTodos);
+  };
+
   const completeTodo = (text) => {
     const newTodos = [...todos];
     const todoIndex = newTodos.findIndex((todo) => todo.text === text);
@@ -58,6 +67,7 @@ function TodoProvider({ children }) {
         totalTasks,
         completeTodo,
         deleteTodo,
+        addTodo,
         openModal,
         setOpenModal,
       }}

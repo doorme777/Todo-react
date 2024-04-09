@@ -1,0 +1,6 @@
+p {
+  text-align: center;
+  transform: translateY(200%);
+  font-size: var(--font-g);
+  font-family: var(--fnt-bold);
+}

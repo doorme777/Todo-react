@@ -1,10 +1,10 @@
 .background-bottom {
-    scrollbar-width: thin;
-    scrollbar-color: transparent transparent;
-    overflow-y: scroll;
-    margin: 0;
-    height: 58% !important;
-    max-height: 370.28px;
-    border-bottom-left-radius: var(--pd-05);
-    border-bottom-right-radius: var(--pd-05);
+  scrollbar-width: thin;
+  scrollbar-color: transparent transparent;
+  overflow-y: scroll;
+  margin: 0;
+  height: 58% !important;
+  max-height: 311.28px;
+  border-bottom-left-radius: var(--pd-05);
+  border-bottom-right-radius: var(--pd-05);
 }

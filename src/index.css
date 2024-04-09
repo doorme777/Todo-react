@@ -4,19 +4,19 @@
   --pd-2: 24px;
   --pd-3: 32px;
   --font-g: 32px;
-  --font-m:20px;
-  --font-sm:16px;
-  --dark-green: #273A2D;
-  --soft-green: #6F7357;
-  --cream: #C8AD8D;
-  --pink: #E4C5C4;
-  --light-white: #EBE6EA;
-  --fnt-black: 'Roboto-Black.ttf';
-  --fnt-black-italic: 'Roboto-BlackItalic.ttf';
-  --fnt-bold: 'Roboto-Bold.ttf';
-  --fnt-regular: 'Roboto-Regular.ttf';
+  --font-m: 20px;
+  --font-sm: 16px;
+  --dark-green: #273a2d;
+  --soft-green: #6f7357;
+  --cream: #c8ad8d;
+  --pink: #e4c5c4;
+  --light-white: #ebe6ea;
+  --fnt-black: "Roboto-Black.ttf";
+  --fnt-italic: "Roboto-Italic.ttf";
+  --fnt-bold: "Roboto-Bold.ttf";
+  --fnt-regular: "Roboto-Regular.ttf";
 
-  font-family: 'Roboto-Regular.ttf', sans-serif;
+  font-family: "Roboto-Regular.ttf", sans-serif;
   line-height: 1.5;
   font-weight: 400;
 
@@ -31,23 +31,23 @@
 }
 
 @font-face {
-  font-family: 'Roboto-Black.ttf';
-  src: url('font/Roboto-Black.ttf') format('truetype');
+  font-family: "Roboto-Black.ttf";
+  src: url("font/Roboto-Black.ttf") format("truetype");
 }
 
 @font-face {
-  font-family: 'Roboto-BlackItalic.ttf';
-  src: url('font/Roboto-BlackItalic.ttf') format('truetype');
+  font-family: "Roboto-Italic.ttf";
+  src: url("font/Roboto-Italic.ttf") format("truetype");
 }
 
 @font-face {
-  font-family: 'Roboto-Bold.ttf';
-  src: url('font/Roboto-Bold.ttf') format('truetype');
+  font-family: "Roboto-Bold.ttf";
+  src: url("font/Roboto-Bold.ttf") format("truetype");
 }
 
 @font-face {
-  font-family: 'Roboto-Regular.ttf';
-  src: url('font/Roboto-Regular.ttf') format('truetype');
+  font-family: "Roboto-Regular.ttf";
+  src: url("font/Roboto-Regular.ttf") format("truetype");
 }
 
 body {
@@ -57,8 +57,14 @@ body {
   padding-block: var(--pd-2);
   min-width: 320px;
   min-height: 92vh;
-  background: rgb(111,115,87);
-background: radial-gradient(circle, rgba(111,115,87,1) 7%, rgba(75,87,66,1) 59%, rgba(57,73,56,1) 81%, rgba(39,58,45,0.9780287114845938) 100%);
+  background: rgb(111, 115, 87);
+  background: radial-gradient(
+    circle,
+    rgba(111, 115, 87, 1) 7%,
+    rgba(75, 87, 66, 1) 59%,
+    rgba(57, 73, 56, 1) 81%,
+    rgba(39, 58, 45, 0.9780287114845938) 100%
+  );
 }
 
 .background {
@@ -70,5 +76,3 @@ background: radial-gradient(circle, rgba(111,115,87,1) 7%, rgba(75,87,66,1) 59%,
 h1 {
   text-wrap: balance;
 }
-
-

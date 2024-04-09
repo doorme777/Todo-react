@@ -1,14 +1,14 @@
 .add-task {
-    position: absolute;
-    right: 24px;
-    bottom: 24px;
-    width: 50px;
-    height: 50px;
-    border: none;
-    border-radius: 50%;
-    background-color: var(--dark-green);
+  position: absolute;
+  right: 24px;
+  bottom: 24px;
+  width: 50px;
+  height: 50px;
+  border: none;
+  border-radius: 50%;
+  background-color: var(--dark-green);
 }
 
 .fa-plus {
-    color: #fff;
+  color: #fff;
 }
