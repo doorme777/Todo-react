@@ -6,7 +6,7 @@
     height: 50px;
     border: none;
     border-radius: 50%;
-    background-color: #ffffff1c;
+    background-color: var(--dark-green);
 }
 
 .fa-plus {

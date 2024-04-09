@@ -1,4 +1,4 @@
-function EmptyTodos(props) {
+function EmptyTodos() {
     return (
         <>
             <p>Escribe tu primera tarea.</p>

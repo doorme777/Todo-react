@@ -1,39 +1,39 @@
-import React from 'react';
-import Confetti from 'react-confetti';
-import { HeaderTodo } from '../HeaderTodo/HeaderTodo.jsx';
-import { TaskComponent } from '../TasksComponent/TasksComponent.jsx';
-import { NewTask } from '../NewTask/NewTask.jsx';
-import { Task } from '../Task/Task.jsx';
-import { TodoLoading } from '../TodoLoading/TodoLoading.jsx';
-import { TodoError } from '../TodoError/TodoError.jsx';
-import { EmptyTodos } from '../EmptyTodos/EmptyTodos.jsx';
+import React from "react";
+import Confetti from "react-confetti";
+import { HeaderTodo } from "../HeaderTodo/HeaderTodo.jsx";
+import { TaskComponent } from "../TasksComponent/TasksComponent.jsx";
+import { NewTask } from "../ButtonNewTask/ButtonNewTask.jsx";
+import { Task } from "../Task/Task.jsx";
+import { TodoLoading } from "../TodoLoading/TodoLoading.jsx";
+import { TodoError } from "../TodoError/TodoError.jsx";
+import { EmptyTodos } from "../EmptyTodos/EmptyTodos.jsx";
+import { Modal } from "../Modal/Modal.jsx";
+import { FormNewTask } from "../FormNewTask/FormNewTask.jsx";
+import { TodoContext } from "../TodoContext/TodoContext.jsx";
 
+function AppUI() {
+  const {
+    loading,
+    error,
+    showConfetti,
+    filteredTasks,
+    completeTodo,
+    deleteTodo,
+    openModal,
+  } = React.useContext(TodoContext);
 
-function AppUI({
-  loading,
-  error,
-  showConfetti,
-  completedTasks,
-  totalTasks,
-  searchValue,
-  setSearchValue,
-  filteredTasks,
-  completeTodo,
-  deleteTodo,
-}) {
+  const totalTasks = filteredTasks.length;
+
   return (
     <>
-      {showConfetti && <Confetti numberOfPieces={1550}  tweenDuration={5000} recycle={false}/>}
-      <HeaderTodo
-        completed={completedTasks}
-        total={totalTasks}
-        searchValue={searchValue}
-        setSearchValue={setSearchValue}
-      />
+      {showConfetti && (
+        <Confetti numberOfPieces={1550} tweenDuration={5000} recycle={false} />
+      )}
+      <HeaderTodo />
       <TaskComponent>
-        {loading && <TodoLoading/>}
-        {error && <TodoError/>}
-        {(!loading && totalTasks === 0) && <EmptyTodos/>}
+        {loading && <TodoLoading />}
+        {error && <TodoError />}
+        {!loading && totalTasks === 0 && <EmptyTodos />}
         {filteredTasks.map((task) => (
           <Task
             key={task.text}
@@ -45,6 +45,7 @@ function AppUI({
         ))}
       </TaskComponent>
       <NewTask />
+      {openModal && <Modal> <FormNewTask/> </Modal>  }
     </>
   );
 }
