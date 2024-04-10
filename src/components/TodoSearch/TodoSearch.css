@@ -1,0 +1,22 @@
+input[type="search"] {
+  text-align: center;
+  font-size: var(--font-sm);
+  font-family: var(--fnt-regular);
+  line-height: calc(var(--font-sm) * 1.5px);
+  background-color: var(--soft-green);
+  padding: var(--pd-05);
+  border: 1px solid grey;
+  border-radius: var(--pd-2);
+  width: 100%;
+  max-width: 560px;
+  color: #fff;
+}
+
+input[type="search"]::placeholder {
+  color: #fff;
+}
+
+input[type="search"]:focus-visible {
+  outline: none;
+  border: 2.75px solid var(--pink);
+}

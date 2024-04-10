@@ -9,6 +9,14 @@ más enfocado en el diseño, y ser freelancer así que me ha ayudado en también
 ![alt text](image-1.png)
 Link: https://www.figma.com/file/qLhY1NC88NwHjMDAIa4BZa/Untitled?type=design&node-id=8%3A246&mode=design&t=7lbg3TND8ATh7VAF-1
 
+Me decide ir hacer el **deploy en vercel** por su facilidad, ademas ya le tenía ganas a
+probar algo diferente a netlifly.
+
+### Deploy
+
+![alt text](image.png)
+Link: https://vercel.com/doorme777s-projects/todo-react/8C4e7uXBs7gST3hoPUTiHLRgVC5X
+
 En el proyecto me centré más en implementar lo que se decía en la clase y en entender lo que es **React.js**.
 Los fundamentos ahora son los que más me importaba iterar lo más rápido.
 

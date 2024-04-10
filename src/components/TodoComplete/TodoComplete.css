@@ -1,0 +1,18 @@
+.background-top {
+  border-top-left-radius: var(--pd-05);
+  border-top-right-radius: var(--pd-05);
+  border-bottom: 1.75px solid #fff;
+}
+
+h1 {
+  text-align: center;
+  font-size: var(--font-g);
+  font-family: var(--fnt-regular);
+  line-height: calc(var(--font-g) * 1.5px);
+  font-weight: 600;
+}
+
+h1 span {
+  font-family: var(--fnt-bold);
+  font-weight: bold;
+}

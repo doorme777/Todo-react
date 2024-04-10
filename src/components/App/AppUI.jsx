@@ -1,9 +1,10 @@
 import React from "react";
 import Confetti from "react-confetti";
-import { HeaderTodo } from "../HeaderTodo/HeaderTodo.jsx";
-import { TaskComponent } from "../TasksComponent/TasksComponent.jsx";
+import { TodoComplete } from "../TodoComplete/TodoComplete.jsx";
+import { TodoSearch } from "../TodoSearch/TodoSearch.jsx";
+import { TodoComponentForm } from "../TodoComponentForm/TodoComponentForm.jsx";
 import { NewTask } from "../ButtonNewTask/ButtonNewTask.jsx";
-import { Task } from "../Task/Task.jsx";
+import { Todo } from "../Todo/Todo.jsx";
 import { TodoLoading } from "../TodoLoading/TodoLoading.jsx";
 import { TodoError } from "../TodoError/TodoError.jsx";
 import { EmptyTodos } from "../EmptyTodos/EmptyTodos.jsx";
@@ -24,18 +25,24 @@ function AppUI() {
 
   const totalTasks = filteredTasks.length;
 
+  const ShowWithTask = showConfetti && !localStorage.length === 0;
+
   return (
     <>
-      {showConfetti && (
+      {ShowWithTask && (
         <Confetti numberOfPieces={1550} tweenDuration={5000} recycle={false} />
       )}
-      <HeaderTodo />
-      <TaskComponent>
+
+      <TodoComplete>
+        <TodoSearch />
+      </TodoComplete>
+
+      <TodoComponentForm>
         {loading && <TodoLoading />}
         {error && <TodoError />}
         {!loading && totalTasks === 0 && <EmptyTodos />}
         {filteredTasks.map((task) => (
-          <Task
+          <Todo
             key={task.text}
             text={task.text}
             completed={task.completed}
@@ -43,9 +50,14 @@ function AppUI() {
             onDelete={() => deleteTodo(task.text)}
           />
         ))}
-      </TaskComponent>
+      </TodoComponentForm>
       <NewTask />
-      {openModal && <Modal> <FormNewTask/> </Modal>  }
+      {openModal && (
+        <Modal>
+          {" "}
+          <FormNewTask />{" "}
+        </Modal>
+      )}
     </>
   );
 }
