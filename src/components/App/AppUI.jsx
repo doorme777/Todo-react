@@ -25,11 +25,9 @@ function AppUI() {
 
   const totalTasks = filteredTasks.length;
 
-  const ShowWithTask = showConfetti && !localStorage.length === 0;
-
   return (
     <>
-      {ShowWithTask && (
+      {showConfetti && (
         <Confetti numberOfPieces={1550} tweenDuration={5000} recycle={false} />
       )}
 

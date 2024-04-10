@@ -13,12 +13,12 @@ function TodoProvider({ children }) {
   const [searchValue, setSearchValue] = React.useState("");
   const [openModal, setOpenModal] = React.useState(false);
   // Confetti component
-  const [showConfetti, setShowConfetti] = React.useState(true);
+  const [showConfetti, setShowConfetti] = React.useState(false);
   const allTasksCompleted =
     todos.length > 0 && todos.every((todo) => todo.completed);
 
   React.useEffect(() => {
-    if (allTasksCompleted) {
+    if (allTasksCompleted && !(localStorage.length === 0)) {
       setShowConfetti(true);
     }
   }, [allTasksCompleted]);
