@@ -15,7 +15,7 @@ probar algo diferente a netlifly.
 ### Deploy
 
 ![alt text](image.png)
-Link: https://vercel.com/doorme777s-projects/todo-react/8C4e7uXBs7gST3hoPUTiHLRgVC5X
+Link: todo-react-msmvrl89t-doorme777s-projects.vercel.app
 
 En el proyecto me centré más en implementar lo que se decía en la clase y en entender lo que es **React.js**.
 Los fundamentos ahora son los que más me importaba iterar lo más rápido.
